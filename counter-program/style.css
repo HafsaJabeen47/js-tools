@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 200px;
+}
+
+#label{
+    font-size: 120px;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(77, 183, 215);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.25s;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(36, 87, 103);
+}
