@@ -4,3 +4,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+button{
+    cursor: pointer;
+}
