@@ -1,5 +1,9 @@
 
 
+
+
+
+
 let table = document.querySelector('#table');
 let getNum = document.querySelector('#getNum'); //10
 let limit = document.querySelector('#limit'); //5
@@ -13,7 +17,7 @@ btn.addEventListener('click',()=>{
         console.log(output);
     }
 });
-
+//  
 
 
 
