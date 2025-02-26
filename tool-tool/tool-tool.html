@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Case Converter Tool</h2>
+    
+    <textarea id="textInput" placeholder="Enter your text here..."></textarea><br>
+    
+    <select id="caseType">
+        <option value="uppercase">Uppercase</option>
+        <option value="lowercase">Lowercase</option>
+        <option value="titlecase">Title Case</option>
+        <option value="sentencecase">Sentence Case</option>
+    </select>
+    
+    <button onclick="convertText()">Convert</button>
+    
+    <h3>Converted Text:</h3>
+    <textarea id="outputText" readonly></textarea>
+
+    <!-- <script>
+        function convertText() {
+            let inputText = document.getElementById("textInput").value;
+            let caseType = document.getElementById("caseType").value;
+            let outputText = "";
+
+            if (!inputText.trim()) {
+                alert("Please enter some text to convert.");
+                return;
+            }
+
+            if (caseType === "uppercase") {
+                outputText = inputText.toUpperCase();
+            } 
+            else if (caseType === "lowercase") {
+                outputText = inputText.toLowerCase();
+            } 
+            else if (caseType === "titlecase") {
+                outputText = inputText.toLowerCase().replace(/\b\w/g, char => char.toUpperCase()); 
+            } 
+            else if (caseType === "sentencecase") {
+                outputText = inputText.toLowerCase().replace(/(^\s*\w|[.!?]\s*\w)/g, char => char.toUpperCase());
+            }
+
+            document.getElementById("outputText").value = outputText;
+        }
+    </script> -->
+
+</body>
+</html>
