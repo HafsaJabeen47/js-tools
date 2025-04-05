@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Analysis Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+        <h1>Text Analysis Tool</h1>
+    
+        <textarea id="text-input" placeholder="Type or paste your text here..."></textarea>
+    
+        <button onclick="analyzeText()">Analyze Text</button>
+    
+        <div class="results">
+            <p><strong>Words:</strong> <span id="word-count">0</span></p>
+            <p><strong>Characters (with spaces):</strong> <span id="char-with-space">0</span></p>
+            <p><strong>Characters (without spaces):</strong> <span id="char-without-space">0</span></p>
+            <p><strong>Sentences:</strong> <span id="sentence-count">0</span></p>
+            <p><strong>Paragraphs:</strong> <span id="paragraph-count">0</span></p>
+        </div>
+    
+        <p class="footer">Created by Hafsa 💻</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
