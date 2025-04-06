@@ -24,4 +24,8 @@ function analyzeText() {
     document.getElementById("sentence-count").textContent = sentences.length;
     document.getElementById("paragraph-count").textContent = paragraphs.length;
   }
+
+
+
+  // this code is perfectly fine to run.
   
